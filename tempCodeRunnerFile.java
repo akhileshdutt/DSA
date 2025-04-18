@@ -1,12 +1,6 @@
-        // for(int i=0; i<arr1.length; i++){
-        //     arr1[i] = in.nextInt();
+or(int i=0; i<5; i++){
+        //     for(int j=0; i<5; i++){
+        //         System.out.print(arr[i][j]);
+        //     }
+        //     System.out.println(arr[i]);
         // }
-        // for(int i=0; i<arr1.length; i++){
-        //     System.out.print(arr1[i]+" ");
-        // }
-        // for(int num : arr1){
-        //     System.out.print(num+"-");  
-        // }
-
-        // System.out.print(Arrays.toString(arr1));
-    
