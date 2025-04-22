@@ -20,7 +20,7 @@ public class Lower_bond {
         int high = num.length - 1;
         int ans = num.length;
 
-        while(low<=high){
+        while(low>=high){
             int mid = low+(high-low) / 2;
             if(num[mid]>=x){
                 ans = mid;
