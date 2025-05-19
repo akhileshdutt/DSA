@@ -1,10 +1,10 @@
 // time complexity is -> O(logN)
 
 // import java.util.Arrays;
-public class binSer{
+public class BinerySer{
     public static void main(String[] args){
         int[] arr = {1,3,4,5,6,17,23,42,60};
-        int target = -4;
+        int target = 4;
         int ans = binarySearch(arr, target);
         System.out.println(ans);
     }
@@ -25,4 +25,6 @@ public class binSer{
          }
          return -1;
     } 
-}           
+}            
+    
+
