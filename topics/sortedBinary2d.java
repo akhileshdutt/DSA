@@ -10,7 +10,7 @@ public class sortedBinary2d {
             {9, 10, 11, 12},
             {13, 14, 15, 16}
         };
-        System.out.println("Which element you want to search (in between 1-16): ");
+        System.out.print("Which element you want to search (in between 1-16): ");
         Scanner sc = new Scanner(System.in);
         int target = sc.nextInt();
 
@@ -55,7 +55,34 @@ public class sortedBinary2d {
             }
         }
 
+        //now we have two rows
+        // check whether the target is in the col of 2 rows
 
-        return new int[]{-1, -1};
+        if(matrix[rStart][cmid] == target){
+            return new int[]{rStart,cmid};
+        }
+        if(matrix[rStart+1][cmid] == target){
+            return new int[]{rStart+1,cmid};
+        }
+        //Search in 1st part
+        if(target<=matrix[rStart][cmid-1]){
+            return binsearch(matrix, rStart, target, 0, cmid-1);
+        }
+        //Search in 2st part
+        if(target>=matrix[rStart][cmid+1] && target<=matrix[rStart][col-1]){
+            return binsearch(matrix, rStart+1, target, cmid+1, col-1);
+        }
+        //Search in 3st part
+        if(target<=matrix[rStart+1][cmid-1]){
+            return binsearch(matrix, rStart+1, target, 0, cmid-1);
+        }
+        //Search in 4st part
+        else{
+            return binsearch(matrix, rStart+1, target, cmid+1, col-1);
+        }
+        
+        
+
+        // return new int[]{-1, -1};
     }
 }
