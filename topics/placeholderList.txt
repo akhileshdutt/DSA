@@ -1,0 +1,11 @@
+$c = char
+%d = decimal numner (base 10)
+%e = exponential floating-point number
+%f = Floating-point number
+%i = integer
+%o = octal number
+%s= string
+%u = unsigned decemal(integer) number
+%t = date/time
+%n = new line
+%x = hexadecimal number (base 16)
