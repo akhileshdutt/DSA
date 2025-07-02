@@ -15,5 +15,7 @@ public class StringBuild {
         System.out.println(name);
         System.out.println(name.indexOf('e'));    // tell the location
         System.out.println("    Akhilesh   ".strip());
+        System.out.println(Arrays.toString(name.split("  ")));
+
     }
 }
