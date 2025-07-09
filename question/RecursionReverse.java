@@ -1,6 +1,6 @@
 public class RecursionReverse {
     public static void main(String[] args) {
-        int ans = rev(54321);
+        int ans = rev(12345);
         System.out.println(ans);
     }
     static int rev(int n){
@@ -10,7 +10,6 @@ public class RecursionReverse {
         int rem = n%10;
         System.out.print(rem);
         n=n/10;
-        // System.out.print(n);
         return rev(n);
     }
 }
