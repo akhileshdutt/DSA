@@ -1,3 +1,5 @@
+package Recursion;
+
 // in this we have to skip "a" from the string and print the new string.
 // logic : if the up string is empty, we will return p string, it wwill be empty first too, then we will use charAt(index) to check that element.isEqual('a') or not, if yes then we will skip and with skipping, we will charAt(index++) so that it can check other number. but if the element is not equal to 'a', then we will add that elemt in the p string. 
 

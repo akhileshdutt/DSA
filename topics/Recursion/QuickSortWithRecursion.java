@@ -1,3 +1,4 @@
+package Recursion;
 import java.util.Arrays;
 
 // in this, wwe use to take a random element as pivot and campare all the element with it and, ent the smaller elements LHS and grater element RHS, and the we apply recursion both the side and sort them.
