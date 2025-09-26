@@ -1,4 +1,4 @@
-package SundayPrac;
+
 
 import java.util.Scanner;
 public class palindrome {

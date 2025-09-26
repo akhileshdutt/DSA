@@ -1,5 +1,3 @@
-package SundayPrac;
-
 import java.util.*;
 public class Poewr_of_2 {
     public static void main(String[] args) {
