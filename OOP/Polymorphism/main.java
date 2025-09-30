@@ -7,5 +7,7 @@ public class main {
         square sq1 = new square();
 
         sq1.area();
+        s1.area();
+        c1.area();
     }
 }
