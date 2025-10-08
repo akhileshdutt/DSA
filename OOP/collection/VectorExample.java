@@ -1,5 +1,4 @@
-package collection;
-
+import java.util.List;
 import java.util.Vector;
 
 public class VectorExample {
@@ -8,6 +7,6 @@ public class VectorExample {
         vector.add(32);
         vector.add(27);
         vector.add(23);
-        System.out.println(vector);                         // vector is exactly same as ArrayList but the main difference is that vector is synchronized. 
+        System.out.println(vector);          // vector is exactly same as ArrayList but the main difference is that vector is synchronized. 
     }
 }
