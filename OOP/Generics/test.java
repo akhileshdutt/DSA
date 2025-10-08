@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class customGenericArrayList<T> {                  // The <T> we have added is generic.
+public class test<T> {                  // The <T> we have added is generic. now we have to use T as a datatype
 
     private int data[];                                   // initiated the custom arrayList ; but this can only store the int.
     private static int DEFAULT_SIZE = 10;                 // giving the defaul size
     private int size=0;                                   // giving the initial size
 
-    public customGenericArrayList(){                            // these are the parameters.
-        this.data = new int[DEFAULT_SIZE];
-    }
+    // public customGenericArrayList(){                            // these are the parameters.
+    //     this.data = new int[DEFAULT_SIZE];
+    // }
 
     public void add(int num){
         if (isFull()) {
