@@ -1,3 +1,5 @@
+
+package question;
 // q1) print all the number from n to 1 .
 // q2) print all the number from 1 to n .
 

@@ -1,3 +1,5 @@
+package question;
+
 public class linearSearchWithRecursion {
     public static void main(String[] args) {
         int arr[] = {1,2,3,2,4,23,18,23};

@@ -1,3 +1,5 @@
+package question;
+
 public class ZerosToEnd {
     // static int zeros(int[] arr){
     //     int n = arr.length;

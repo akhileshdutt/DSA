@@ -1,3 +1,5 @@
+
+package question;
 public class RecursionSumOFDigits {
     public static void main(String[] args) {
         int ans = DigitSum(102345);

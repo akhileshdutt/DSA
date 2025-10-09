@@ -1,3 +1,5 @@
+package question;
+
 public class smallergraterthan {
     public static void main(String[] args) {
         char[] letters= {'c','f','j'};

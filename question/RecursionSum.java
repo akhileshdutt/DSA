@@ -1,3 +1,5 @@
+package question;
+
 public class RecursionSum {
     public static void main(String[] args) {
         int ans = sum(10);

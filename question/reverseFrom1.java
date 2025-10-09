@@ -1,3 +1,5 @@
+package question;
+
 public class reverseFrom1{
     public static void main(String[] args) {
         int k = 2;

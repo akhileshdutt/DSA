@@ -1,3 +1,5 @@
+package question;
+
 public class TwoSum{
     public static int[] sums(int[] arr, int target){
         int n = arr.length;

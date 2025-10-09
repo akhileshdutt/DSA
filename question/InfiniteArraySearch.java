@@ -1,4 +1,6 @@
-    import java.util.Scanner;
+package question;
+
+import java.util.Scanner;
     public class InfiniteArraySearch {
         public static void main(String[] args) {
             int[] arr = {1,2,3,4,7,13,17,20,25,30,31,35,40};

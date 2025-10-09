@@ -1,3 +1,5 @@
+package question;
+
 public class BinarySearch {
     public static int linearSearch(int nums[], int target) {
         int n = nums.length;	

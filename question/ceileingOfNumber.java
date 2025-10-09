@@ -1,3 +1,4 @@
+package question;
 public class ceileingOfNumber {
     public static void main(String[] args) {
         int[] arr= {2,3,5,8,13,15,25,36,45};

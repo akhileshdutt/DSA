@@ -1,3 +1,5 @@
+package question;
+
 public class missNum {
     public static void main(String[] args) {
         int arr[] = {1,2,4,5,6};

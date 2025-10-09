@@ -1,4 +1,6 @@
-// Binary Search:  isme mainly ye hota h ki, kisi bhi array me koi element search krna ho to,, pehle mid element check krta h, agr same hua to vahi search khtm, or agr agr array sorted hua to ham mid ke right of left me dekhte h 
+package question;
+
+  // Binary Search:  isme mainly ye hota h ki, kisi bhi array me koi element search krna ho to,, pehle mid element check krta h, agr same hua to vahi search khtm, or agr agr array sorted hua to ham mid ke right of left me dekhte h 
 import java.util.Scanner;
 import java.util.Arrays;
 
