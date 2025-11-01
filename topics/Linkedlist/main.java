@@ -8,6 +8,8 @@ public class main {
         list.insertFirst(2);
         list.insertFirst(6);
         list.insertLast(100);
+        list.insert(500,3);
+        list.delete(3);
         list.display();
     }
 }
