@@ -67,7 +67,7 @@ public class LL {
         }
         if(index==size-1){
             Node temp = head;
-            for(int i=0; i<size-2;i++){
+            for(int i=0; i<size-2;i++){ 
                 temp = temp.next;
             }
             tail = temp;

@@ -11,5 +11,14 @@ public class main {
         list.insert(500,3);
         list.delete(3);
         list.display();
-    }
+
+        DLL Dlist = new DLL();
+        Dlist.insertFirst(10);
+        Dlist.insertFirst(40);
+        Dlist.insertFirst(30);
+        Dlist.insertFirst(20);
+        Dlist.insertLast(50);
+        Dlist.display();
+    }   
+
 }
