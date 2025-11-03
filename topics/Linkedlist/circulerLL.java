@@ -1,6 +1,6 @@
 package Linkedlist;
 
-public class circulerLL {                              // 
+public class circulerLL {                              
     
     private Node head;
     private Node tail;
@@ -20,6 +20,14 @@ public class circulerLL {                              //
             node.next= head;
             tail = node;
         }
+    }
+
+    public void delete(int index){
+            Node temp = head;
+            for(int i=0; i<index-1; i++){
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;   
     }
 
     public void display(){

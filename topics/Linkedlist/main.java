@@ -26,6 +26,7 @@ public class main {
         clist.insert(53);
         clist.insert(36);
         clist.insert(10);
+        clist.delete(1);
         clist.display();
     
     }   
