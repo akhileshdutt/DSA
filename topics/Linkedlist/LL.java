@@ -98,12 +98,32 @@ public class LL {
         }
         System.out.println("END");
 
-        while(last != null){
-            System.out.print(last.value + " -> ");
-            last = last.next;
-        }
+        // while(last != null){
+        //     System.out.print(last.value + " -> ");
+        //     last = last.next;
+        // }
         
     }
+
+
+// ----------------------------------------------- Inserting Recursively -------------------------------------------------
+
+
+    public void InsertRec(int value, int index){
+        head = InsertRec(value, index, head);
+    }
+
+    private Node InsertRec(int value, int index, Node node){
+        if(index == 0){
+            Node temp = new Node(value, node);
+            size++;
+            return temp;
+        }
+
+        node.next = InsertRec(value, index-1, node.next);
+        return node;
+    }
+
 
 // ------------------------------------------------- Node Class -------------------------------------------------
 
