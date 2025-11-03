@@ -83,13 +83,26 @@ public class LL {
 
     }
 
+    public void listRev(){
+        Node last = null;
+        
+    }
+
     public void display(){
         Node temp = head;
+        Node last = null;
         while(temp != null){
             System.out.print(temp.value + " -> ");
+            last  = temp;
             temp = temp.next;
         }
         System.out.println("END");
+
+        while(last != null){
+            System.out.print(last.value + " -> ");
+            last = last.next;
+        }
+        
     }
 
 // ------------------------------------------------- Node Class -------------------------------------------------

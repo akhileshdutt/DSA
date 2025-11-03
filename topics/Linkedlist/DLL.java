@@ -30,12 +30,21 @@ public class DLL {
 
     public void display(){
         Node temp = head;
+        Node last = null;
         System.out.print("null <- ");
         while(temp != null){
             System.out.print(temp.value + " <-> ");
+            last  = temp;
             temp = temp.next;
         } 
-        System.out.print("null");
+        System.out.println("null");
+        
+        System.out.println("Reverse Display:");
+
+        while(last != null){
+            System.out.print(last.value + " -> ");
+            last = last.prev;
+        }
     }
 
     private class Node{
