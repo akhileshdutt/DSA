@@ -12,7 +12,6 @@ public class main {
         // // list.delete(3);
         // list.InsertRec(400, 1);
         // list.display();
-
         
         // DLL Dlist = new DLL();
         // Dlist.insertFirst(10);
@@ -33,13 +32,16 @@ public class main {
         
         questions ques = new questions();
         ques.insertFirst(10);
+        ques.insertFirst(10);
+        ques.insertFirst(10);
         ques.insertFirst(20);
-        ques.insertFirst(30);
-        ques.insertFirst(30);
         ques.insertFirst(20);
+        ques.insertFirst(20);
+        ques.insertFirst(20);
+        ques.insertFirst(40);
+        ques.insertFirst(40);
+        ques.insertFirst(50);
         ques.duplicate();
         ques.display();
-    
-    
     }
 }
