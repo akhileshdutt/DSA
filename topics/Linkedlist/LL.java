@@ -101,10 +101,55 @@ public class LL {
         // while(last != null){
         //     System.out.print(last.value + " -> ");
         //     last = last.next;
-        // }
-        
+        // }   
     }
 
+    public static LL merge(LL first, LL second){
+        Node f= first.head;
+        Node s= second.head;
+
+        LL ans = new LL();
+
+        while ( f!=null && s!=null){
+            if(f.value < s.value){
+                ans.insertLast(f.value);
+                f= f.next;
+            }else{
+                ans.insertLast(s.value);
+                s = s.next;
+            }
+        }
+
+        while (f!=null){
+            ans.insertLast(f.value);
+            f = f.next;
+        }
+        while (s!=null){
+            ans.insertLast(s.value);
+            s = s.next;
+        }
+        return ans;
+    }
+
+
+    public static void main(String[] args) {
+        LL first = new LL();
+        first.insertLast(1);
+        first.insertLast(3);
+        first.insertLast(5);
+        first.insertLast(7);
+        first.display();
+
+        LL second = new LL();
+        second.insertLast(1);
+        second.insertLast(4);
+        second.insertLast(6);
+        second.insertLast(8);
+        second.display();
+
+        LL ans = LL.merge(first, second);
+        ans.display();
+    }
 
 // ----------------------------------------------- Inserting Recursively -------------------------------------------------
 

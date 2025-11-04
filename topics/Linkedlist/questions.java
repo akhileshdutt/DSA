@@ -2,7 +2,6 @@ package Linkedlist;
 
 public class questions {
 
-
     private Node head;
     private Node tail;
 
@@ -23,14 +22,6 @@ public class questions {
 
     public void duplicate(){
         Node node = head;
-        // while(node.next != null){
-        //     if(node.value == node.next.value){
-        //         node = node.next;
-        //     }else{
-        //         node.next = node.next.next;
-        //     }
-        //     node = node.next;
-        // }
         while (node != null && node.next != null) {
         if (node.value == node.next.value) {
             node.next = node.next.next;
@@ -38,7 +29,7 @@ public class questions {
         } else {
             node = node.next;
         }
-    }
+        }
     }
 
     public Node display(){
@@ -50,10 +41,6 @@ public class questions {
         System.out.println("End");
         return head;
     }
-
-
-
-
 
     private class Node{
         int value;
