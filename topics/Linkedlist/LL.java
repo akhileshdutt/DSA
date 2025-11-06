@@ -98,11 +98,13 @@ public class LL {
         }
         System.out.println("END");
 
-        // while(last != null){
+        // while(last != null){                           // Reverse Display
         //     System.out.print(last.value + " -> ");
         //     last = last.next;
         // }   
     }
+
+//  -------------- Merging Two Sorted Linked Lists --------------------
 
     public static LL merge(LL first, LL second){
         Node f= first.head;
