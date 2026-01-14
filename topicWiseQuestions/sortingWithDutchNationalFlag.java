@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class sortingWithDutchNationalFlag {
     public static void main(String[] args) {
-        int arr[] = {2,2,1,0,2,0,1};
+        int arr[] = {2,0,2,1,1,0};
         DutchNationalFlag(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -28,6 +28,7 @@ public class sortingWithDutchNationalFlag {
             }else if(arr[mid]==0){
                 swap(arr, mid, left);
                 left++;
+                mid++;
             }else{
                 mid++;
             }
