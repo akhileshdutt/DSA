@@ -18,8 +18,12 @@ public class sorting {
         // }
         // System.out.println(Arrays.toString(nums));
 
-        int[] sorted = selection(nums);
-        System.out.println(Arrays.toString(sorted));
+        // int[] sorted = selection(nums);
+        // System.out.println(Arrays.toString(sorted));
+
+        Arrays.sort(nums);                            // Array library function.
+        System.out.println(Arrays.toString(nums));
+
 
     }
     public static void swap(int[] nums, int a, int b){
@@ -44,7 +48,21 @@ public class sorting {
     }
 
     // insertetion sort = Cards jaisa sorting. Ek element uthao, usko correct position me insert karo.
+    // merge sort = array ko half me divide kr ke, dono part ko sort kro, fir dono array ke first elements ko check kro, or main array me put krte jao
     
+    // Quick Sort =  ek value lo(mostly we take last element), jisko ham bolenge pivot, or poore array me check krnege ki kon se element usse chote hai or kon se usse bade h, to fir ye hone k bas ham chote or bade element wale array ko sort krenge, fir last me chote element array ke elements ko pivot ke aage put krenge or bado ko last me
+
+// Situation	               Use this
+
+// Small array	              Insertion
+// Nearly sorted	          Insertion
+// Fast general	              Quick
+// Guaranteed worst-case	  Heap / Merge
+// Stable sorting	          Merge
+// Low memory	              Heap
+// Java built-in	          Arrays.sort
+
+
 
 
 }
