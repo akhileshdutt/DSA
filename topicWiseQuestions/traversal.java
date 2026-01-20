@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class traversal {
     public static void main(String[] args) {
         int nums[] = {2,3,4,1,3,2,5,0,6,0,4,9,0,4}; 
+        String name =  "Akhilesh";
+
         // printing(nums);
         // sum(nums);
         // oddev(nums);
@@ -14,6 +16,17 @@ public class traversal {
 
         // int k2 = min(nums);
         // System.out.println(k2);
+
+        // now we'll do string reverse.
+        // String k = rev(name);
+        // System.out.println(k);
+
+        // String n = "madam";
+        // boolean k = palindrome(name);
+        // System.out.println(k);
+
+        // int k = count(name);
+        // System.out.println(k);
 
 
     }
@@ -72,6 +85,53 @@ public class traversal {
         return min;
     }
 
-    
+    public static String rev(String name){
+        char[] arr= name.toCharArray();
+        int left = 0;
+        int right = arr.length-1;
+
+        while(left<right){
+            char temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+        return new String(arr);
+    }
+
+    public static boolean palindrome(String name){
+        char[] arr = name.toCharArray();
+        int left = 0;
+        int right = arr.length-1;
+
+        while(left<right){
+            char temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            right--;
+            left++;
+        }
+
+        String a = new String(arr);
+        System.out.println(name);
+        
+        System.out.println(a);
+
+        if(a.equals(name)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public static int count(String name){
+        char[] arr = name.toCharArray();
+        int count =arr.length;
+        
+        return count;
+    }
+
 
 }
