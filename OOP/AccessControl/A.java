@@ -17,7 +17,7 @@ public void setNum(int num){                            // setter sets the value
     public A(int num, String name){
         this.num= num;
         this.name= name;
-        this.arr= new int[num]; 
+        
     }
 
     
